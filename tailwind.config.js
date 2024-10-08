@@ -9,7 +9,16 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans': ['Overpass', 'sans-serif'],
+      'serif': ['Newsreader', 'serif']
+    },
+    extend: {
+      colors:
+      {
+        "kh-red": "#d82f22",
+      }
+    },
   },
   plugins: [],
 }
