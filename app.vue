@@ -41,7 +41,7 @@ useHead({
   htmlAttrs: {
     lang: 'en'
   },
-  title: 'Kathryn Hartog / Toronto Web Developer',
+  title: 'Kat Hartog / Toronto Web Developer',
   meta: [
     { name: 'description', content: 'Creating engaging experiences on the web and elsewhere.' }
   ],
