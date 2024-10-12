@@ -37,13 +37,14 @@
 </template>
 
 <script setup>
-useHead({
-  htmlAttrs: {
-    lang: 'en'
-  },
+const config = useRuntimeConfig()
+
+useSeoMeta({
   title: 'Kat Hartog / Toronto Web Developer',
-  meta: [
-    { name: 'description', content: 'Creating engaging experiences on the web and elsewhere.' }
-  ],
+  ogTitle: 'Kat Hartog / Toronto Web Developer',
+  description: 'Creating engaging experiences on the web and elsewhere.',
+  ogDescription: 'Creating engaging experiences on the web and elsewhere.',
+  ogImage: config.public.siteURL + '/kat-hartog-og.jpg',
+  twitterCard: 'summary_large_image',
 })
 </script>
