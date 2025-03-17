@@ -19,12 +19,11 @@
 
 <script setup>
 
-
+import { onMounted } from 'vue';
 import { createNoise3D } from 'simplex-noise';
 const noise3D = createNoise3D();
 
 const c = ref(null)
-// const canvas = c.value
 
 let t = 0;
 
@@ -60,9 +59,11 @@ function frame() {
 
 }
 
-if (typeof requestAnimationFrame === "function") {
-    requestAnimationFrame(frame)
-}
+onMounted(() => {
+    if (typeof requestAnimationFrame === "function") {
+        requestAnimationFrame(frame)
+    }
+});
 
 
 function mapRange (number, inMin, inMax, outMin, outMax) {
@@ -70,13 +71,8 @@ function mapRange (number, inMin, inMax, outMin, outMax) {
 }
 
 function getPixel(x, y, scale, t) {
-    const pixel = noise3D(x / scale, y / scale, t / 1000); // value is from -1 to 1
-    // const normalized = mapRange(pixel, -1, 1, 0, 255); // if black & white
+    const pixel = noise3D(x / scale, y / scale, t / 1000);
     const normalized = mapRange(pixel, -1, 1, 0, 1);
-    // const noise = randomNoisePixel()
-    // const noisified = Math.min(normalized, noise)
-    // const noisified = normalized + noise
-    // const colorMapped = gradientLerp(noisified, blueGradient);
     const colorMapped = gradientLerp(normalized, blueGradient);
     return colorMapped;
 }
@@ -84,8 +80,6 @@ function getPixel(x, y, scale, t) {
 function randomNoisePixel() {
     let value = Math.random()
     value = mapRange(value, 0, 1, 0.3, 1.2)
-
-    // value = value * 0.5
     return value
 }
 
@@ -105,7 +99,6 @@ const blueGradient = [
 // gradient is an array as above. Array of arrays. Arrays are pos, r, g, b, a
 function gradientLerp(number, gradient) {
     
-    // how do we do this? 
     // find which two keys this falls betwen.
     // then do a regular maprange based on the bounds
 
@@ -118,7 +111,6 @@ function gradientLerp(number, gradient) {
             if (i < gradient.length - 1) {
                 upperBand = gradient[i + 1]
             }
-            // break;
         }
     }
 
