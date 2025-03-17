@@ -41,7 +41,7 @@ useSeoMeta({
   ogTitle: 'Kat Hartog / Toronto Web Developer',
   description: 'Creating engaging experiences on the web and elsewhere.',
   ogDescription: 'Creating engaging experiences on the web and elsewhere.',
-  ogImage: config.public.siteURL + '/kat-hartog-og.jpg',
+  ogImage: config.public.siteURL + '/kat-hartog-og.png',
   twitterCard: 'summary_large_image',
 })
 </script>
