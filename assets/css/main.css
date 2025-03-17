@@ -1,5 +1,12 @@
-@import url(https://fonts.bunny.net/css?family=newsreader:400,500|overpass:400);
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Funnel+Sans&family=Overpass&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    .text-big-title {
+        font-size: 5.714285714vw;
+    }
+}

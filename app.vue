@@ -1,35 +1,26 @@
 <template>
-  <div class="p-6 flex items-center gap-6 md:gap-12">
+  <div class="h-dvh w-screen">
 
-    <div class="bg-slate-200 w-1/4 h-[calc(100svh-48px)] min-w-9">
+    <Swirl></Swirl>
 
-      <img src="~/assets/img/swirl-vertical.jpg" alt="" class="h-full w-full object-cover" />
+    <div class="text-white relative z-10 px-12 py-1 md:w-[70%] mx-auto">
 
-    </div>
+      <img src="~/assets/img/kat-hartog-logo.svg" alt="Kat Hartog" height="64" width="64" class="animate-fade1 block my-20 md:my-[12vmin] mx-auto" />
 
-    <div class="max-w-[384px] md:ml-[15%] mr-6 md:mr-12 pb-12">
+      <h1 class="animate-fade2 mt-12 font-title font-semibold text-[36px] leading-[1.1] md:text-big-title md:leading-[1.05]">Working at the edge of creative technology</h1>
 
-      <img src="~/assets/img/kat-hartog-logo.svg" alt="Kat Hartog" height="48" width="48" />
+      <div class="lg:w-[60%]">
+        <p class="animate-fade3 my-12 md:my-16 font-sans lg:text-[20px]">Hi, I&rsquo;m Kat. I&rsquo;m a full-stack web developer from Toronto with a background in experiential installations, art, media and design. Looking to collaborate on a project? Let&rsquo;s connect.</p>
+      </div>
 
-      <h1 class="mt-12 font-serif font-semibold text-xl leading-[1.3]">Hi, I&rsquo;m Kat. I&rsquo;m an experienced
-        full-stack
-        web developer located in Toronto. </h1>
-
-      <p class="my-5 font-serif">With a background in experiential installations, art, media and design, I work at the
-        intersection of creativity and technology. If you have a project or just want to chat, let&rsquo;s connect.</p>
-
-      <div class="flex gap-2 mt-6 text-kh-red text-sm">
+      <div class="animate-fade4 flex gap-2 mt-6 lg:text-[18px]">
         <NuxtLink
-          class="py-1 underline decoration-transparent hover:decoration-kh-red transition-colors underline-offset-2"
+          class="py-1 underline decoration-transparent hover:decoration-white transition-colors underline-offset-2"
           target="blank" to="https://www.linkedin.com/in/kathrynhartog/">LinkedIn</NuxtLink>
         <span class="py-1">/</span>
         <NuxtLink
-          class="py-1 underline decoration-transparent hover:decoration-kh-red transition-colors underline-offset-2"
-          target="blank" to="https://www.instagram.com/kat_hartog_/">Instagram</NuxtLink>
-        <span class="py-1">/</span>
-        <NuxtLink
-          class="py-1 underline decoration-transparent hover:decoration-kh-red transition-colors underline-offset-2"
-          target="blank" to="https://github.com/stormreaever">GitHub</NuxtLink>
+          class="py-1 underline decoration-transparent hover:decoration-white transition-colors underline-offset-2"
+          target="blank" to="mailto:hello@kathartog.com">hello@kathartog.com</NuxtLink>
       </div>
 
     </div>
@@ -38,6 +29,12 @@
 
 <script setup>
 const config = useRuntimeConfig()
+
+useHead({
+  htmlAttrs: {
+    class: 'bg-black',
+  },
+});
 
 useSeoMeta({
   title: 'Kat Hartog / Toronto Web Developer',
