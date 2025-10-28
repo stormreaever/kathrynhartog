@@ -1,27 +1,35 @@
 <template>
-  <div class="h-dvh w-screen">
+  <div class="h-full min-h-dvh w-screen">
 
     <Swirl></Swirl>
 
-    <div class="text-white relative z-10 px-12 py-1 md:w-[70%] mx-auto">
+    <div class="text-white relative z-10 px-12 py-4 md:w-[80%] mx-auto">
 
-      <img src="~/assets/img/kat-hartog-logo.svg" alt="Kat Hartog" height="64" width="64" class="animate-fade1 block my-20 md:my-[12vmin] mx-auto" />
+      <img src="~/assets/img/kat-hartog-logo-wide.svg" alt="Kat Hartog" height="72" width="72"
+        class="animate-fade1 block my-20 md:my-[12vmin]" />
 
-      <h1 class="animate-fade2 mt-12 font-title font-semibold text-[36px] leading-[1.1] md:text-big-title md:leading-[1.05]">Working at the edge of creative technology</h1>
+      <h1
+        class="animate-fade2 mt-12 font-bold text-[36px] leading-[1.1] md:text-big-title md:leading-[1.05] subpixel-antialiased">
+        At the edge of creative technology.</h1>
 
-      <div class="lg:w-[60%]">
-        <p class="animate-fade3 my-12 md:my-16 font-sans lg:text-[20px]">Hi, I&rsquo;m Kat. I&rsquo;m a full-stack web developer from Toronto with a background in experiential installations, art, media and design. Looking to collaborate on a project? Let&rsquo;s connect.</p>
+      <div class="grid md:grid-cols-2 items-end gap-6 md:gap-16 my-16 md:my-[10vmin]  lg:text-[18px] antialiased">
+        <div class="py-1">
+          <p class="animate-fade3 font-sans font-light">Hi, I&rsquo;m Kat. I&rsquo;m a
+            full-stack web
+            developer from Toronto with a background in experiential installations, art, media and design.</p>
+        </div>
+
+        <div class="animate-fade4 flex gap-2 ">
+          <NuxtLink
+            class="py-1 underline decoration-transparent hover:decoration-white transition-colors underline-offset-2"
+            target="blank" to="https://www.linkedin.com/in/kathrynhartog/">LinkedIn</NuxtLink>
+          <span class="py-1">/</span>
+          <NuxtLink
+            class="py-1 underline decoration-transparent hover:decoration-white transition-colors underline-offset-2"
+            target="blank" to="mailto:hello@kathartog.com">hello@kathartog.com</NuxtLink>
+        </div>
       </div>
 
-      <div class="animate-fade4 flex gap-2 mt-6 lg:text-[18px]">
-        <NuxtLink
-          class="py-1 underline decoration-transparent hover:decoration-white transition-colors underline-offset-2"
-          target="blank" to="https://www.linkedin.com/in/kathrynhartog/">LinkedIn</NuxtLink>
-        <span class="py-1">/</span>
-        <NuxtLink
-          class="py-1 underline decoration-transparent hover:decoration-white transition-colors underline-offset-2"
-          target="blank" to="mailto:hello@kathartog.com">hello@kathartog.com</NuxtLink>
-      </div>
 
     </div>
   </div>

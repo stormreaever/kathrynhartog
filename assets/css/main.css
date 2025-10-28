@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Funnel+Sans&family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +7,6 @@
 
 @layer utilities {
     .text-big-title {
-        font-size: 5.714285714vw;
+        font-size: 7.8vw;
     }
 }
