@@ -15,8 +15,8 @@
       <div class="grid md:grid-cols-2 items-end gap-6 md:gap-16 my-16 md:my-[10vmin]  lg:text-[18px] antialiased">
         <div class="py-1">
           <p class="animate-fade3 font-sans font-light">Hi, I&rsquo;m Kat. I&rsquo;m a
-            full-stack web
-            developer from Toronto with a background in experiential installations, art, media and design.</p>
+            creative technologist from Toronto with a background in experiential installations, art, media and design.
+          </p>
         </div>
 
         <div class="animate-fade4 flex gap-2 ">
